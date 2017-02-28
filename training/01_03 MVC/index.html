@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Angular Demo</title>
   <script src="lib/angular/angular.min.js"></script>
+
+<script>
+angular.module('myApp',[]).controller('MyController',function ($scope) {
+  $scope.author = {
+    'name' : 'Ray Villalobos',
+    'title' : 'Staff Author',
+    'company' : 'Lynda.com'
+  }
+});
+</script>
 </head>
 <body>
 
@@ -12,15 +22,5 @@
   <p>{{ author.title + ', ' + author.company }}</p>
 </div>
 
-<script>
-
-function MyController($scope) {
-  $scope.author = {
-    'name' : 'Ray Villalobos',
-    'title' : 'Staff Author',
-    'company' : 'Lynda.com'
-  }
-}
-</script>
 </body>
 </html>
